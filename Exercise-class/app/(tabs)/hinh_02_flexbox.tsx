@@ -88,7 +88,7 @@ import { View, Text, StyleSheet } from 'react-native';
 /**
  * FlexBox: Demo các thuộc tính flexDirection và justifyContent
  */
-export default function FlexBox() {
+export function FlexBox() {
     return (
         <View style={styles.container}>
             {/* FlexBox1: Demo flexDirection row cơ bản */}

@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function CalculatorScreen() {
+export function CalculatorScreen() {
     return (
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.container}>

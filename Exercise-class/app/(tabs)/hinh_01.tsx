@@ -10,7 +10,7 @@
 import React from 'react';
 import { Image, StatusBar, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export function App() {
     return (
         <View style={styles.container}>
             <View style={styles.card}>

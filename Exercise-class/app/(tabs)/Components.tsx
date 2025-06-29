@@ -272,3 +272,114 @@
 //     },
 // });
 
+import React from "react";
+import { View, Button, Alert, Text, TouchableOpacity, TouchableHighlight, Pressable, Modal } from "react-native";
+// export function Button1() {
+//     return (
+//         <View>
+//             <Button
+//                 title='click me'
+//                 onPress={() => Alert.alert('click')}
+//                 color={'red'}
+//                 disabled={true}
+//             ></Button>
+//         </View>
+//     )
+// }
+// export function TouchableOpacity01() {
+//     return (
+//         <View>
+//             <TouchableOpacity
+//                 style={{ margin: 66 }}
+//                 delayLongPress={4000}
+//                 onPress={() => console.log('hihi')}
+//                 onLongPress={() => console.log('long check')}
+//                 onPressIn={() => console.log('click in')}
+//                 onPressOut={() => console.log('click out')}
+//                 activeOpacity={0.5} // xét độ mờ của view; default :0.2
+//                 hitSlop={{ bottom: 50 }}  // mở rộng vùng chạm 
+
+
+//             >
+//                 <Text style={{ color: 'black', fontSize: 26, backgroundColor: 'red', textAlign: 'center', padding: 26, fontWeight: 'bold', borderRadius: 25, margin: 26 }}
+//                 >
+//                     Click nhaaaa
+//                 </Text>
+
+//             </TouchableOpacity>
+//         </View>
+//     )
+
+// }
+
+// export function TouchableHighlight01() {
+//     return (
+//         <View>
+//             <TouchableHighlight
+//                 style={{ margin: 66, backgroundColor: 'green', padding: 26 }}
+//                 delayLongPress={4000}
+//                 onPress={() => console.log('hihi')}
+//                 onLongPress={() => console.log('long highlight')}
+//                 onPressIn={() => console.log('click in highlight')}
+//                 onPressOut={() => console.log('click out highlight')}
+//                 // activeOpacity={0.1} // xét độ mờ của view; default :0.2
+//                 hitSlop={{ bottom: 50 }}  // mở rộng vùng chạm 
+//                 underlayColor={'blue'}
+//                 onShowUnderlay={() => console.log('Show underlay')}
+//                 onHideUnderlay={() => console.log('ngonnnn')}
+//             >
+
+//                 <Text style={{ textAlign: 'center', fontWeight: 'bold' }}>Highlight</Text>
+//             </TouchableHighlight>
+//         </View>
+//     )
+// }
+
+// export function Pressable01() {
+//     return (
+//         <View>
+//             <Pressable
+
+//                 style={({ pressed }) => ({ margin: 0, padding: 26 })}
+//                 delayLongPress={4000}
+//                 onPress={() => console.log('checkk')}
+//                 onLongPress={() => console.log('long checkvar')}
+//                 onPressIn={() => console.log('press varrrr in')}
+//                 onPressOut={() => console.log('pres varrrr out')}
+//                 // activeOpacity={0.1} // xét độ mờ của view; default :0.2
+//                 // hitSlop={{ bottom: 50 }}  // mở rộng vùng chạm
+//                 unstable_pressDelay={2000}
+//                 pressRetentionOffset={150}
+//             >
+//                 {({ pressed }) => (<Text style={{ textAlign: 'center', fontWeight: 'bold', backgroundColor: 'yellow', padding: 26, margin: 20, borderRadius: 26, color: pressed ? 'black' : 'green' }}>{pressed ? 'press' : 'Da nhan nhaaa'}</Text>)}
+//             </Pressable>
+//         </View >
+//     )
+// }
+
+export function Modal01() {
+    const [open, setOpen] = React.useState(false);
+    return (
+        <>
+            <Button title='Sign in' onPress={() => setOpen(true)}></Button>
+            <Modal
+                visible={open}
+                style={{ margin: 100 }}
+                animationType="slide"
+                backdropColor={'pink'}
+                //onDismiss={() => Alert.alert('closed')}
+                transparent={false}
+                onOrientationChange={() => Alert.alert('changeeee')}
+                onRequestClose={() => Alert.alert('closeddddd')}
+                presentationStyle='pageSheet'
+                onShow={() => Alert.alert('openeddd')}
+            >
+
+                <View style={{ margin: 50 }}>
+                    <Text>Sign in</Text>
+                    <Button title='return' onPress={() => setOpen(false)}></Button>
+                </View>
+            </Modal>
+        </>
+    )
+}

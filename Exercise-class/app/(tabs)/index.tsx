@@ -6,14 +6,21 @@ import { View, Text, StyleSheet, ImageComponent } from "react-native";
 // import { CalculatorBMI } from "./hinh_03_TinhBMI";
 // import { StopwatchApp } from "./hinh_04_StopwatchApp";
 // import { Movie } from "./hinh_06_Movie";
-import { DetailMovie } from "./hinh_07_DetailMovie";
+// import { DetailMovie } from "./hinh_07_DetailMovie";
 
-// import { Movie } from "./Movie";
+
+import { Modal01 } from "./Components";
 
 export default function Index() {
   return (
-    <View style={{ flex: 1 }}>
-      {<DetailMovie />}
+    <View >
+      {/* {<DetailMovie />} */}
+      {/* {<Button1 />}
+      {<TouchableOpacity01 />}
+      {<TouchableHighlight01 />}
+      {<Pressable01 />} */}
+      {<Modal01 />}
+
     </View>
 
   );
