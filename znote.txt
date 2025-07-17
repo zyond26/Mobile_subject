@@ -1,5 +1,0 @@
-expo init TenProjectCuaToi
-
-cd TenProjectCuaToi
-
-npm start

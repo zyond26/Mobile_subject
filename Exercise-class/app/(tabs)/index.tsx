@@ -1,27 +1,25 @@
-import { View, Text, StyleSheet, ImageComponent } from "react-native";
 
-// import { View01, View02, Text01, Text02, Image01, Image02, Image03, TextInput1, CuonVanBan, List1, List2, List3 } from "./Components";
-// import { BasicView } from "./hinh_01";
-// import { FlexBox, FlexBox2, FlexBox3, FlexBox4, FlexBox5 } from "./hinh_02_flexbox";
-// import { CalculatorBMI } from "./hinh_03_TinhBMI";
-// import { StopwatchApp } from "./hinh_04_StopwatchApp";
-// import { Movie } from "./hinh_06_Movie";
-// import { DetailMovie } from "./hinh_07_DetailMovie";
+import React from "react";
 
+const Stack = createNativeStackNavigator();
 
-import { Modal01 } from "./Components";
+import { FlexBox, FlexBox2, FlexBox3, FlexBox4, FlexBox5 } from "./hinh_02_flexbox";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "@/screens/HomeScreen";
+import DetailScreen from "@/screens/DetailScreen";
+
+function RootStack() {
+  return (
+    <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: true, headerTintColor: 'white', headerStyle: { backgroundColor: 'green' } }}>
+
+      <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'HomeTown' }} />
+      <Stack.Screen name="Detail" component={() => <DetailScreen />} />
+    </Stack.Navigator>
+  );
+}
 
 export default function Index() {
   return (
-    <View >
-      {/* {<DetailMovie />} */}
-      {/* {<Button1 />}
-      {<TouchableOpacity01 />}
-      {<TouchableHighlight01 />}
-      {<Pressable01 />} */}
-      {<Modal01 />}
-
-    </View>
-
+    <RootStack />
   );
 }

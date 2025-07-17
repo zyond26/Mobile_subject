@@ -272,8 +272,9 @@
 //     },
 // });
 
-import React from "react";
-import { View, Button, Alert, Text, TouchableOpacity, TouchableHighlight, Pressable, Modal } from "react-native";
+// import React from "react";
+
+// import { View, Button, Alert, Text, TouchableOpacity, TouchableHighlight, Pressable, Modal } from "react-native";
 // export function Button1() {
 //     return (
 //         <View>
@@ -297,7 +298,7 @@ import { View, Button, Alert, Text, TouchableOpacity, TouchableHighlight, Pressa
 //                 onPressIn={() => console.log('click in')}
 //                 onPressOut={() => console.log('click out')}
 //                 activeOpacity={0.5} // xét độ mờ của view; default :0.2
-//                 hitSlop={{ bottom: 50 }}  // mở rộng vùng chạm 
+//                 hitSlop={{ bottom: 50 }}  // mở rộng vùng chạm
 
 
 //             >
@@ -323,7 +324,7 @@ import { View, Button, Alert, Text, TouchableOpacity, TouchableHighlight, Pressa
 //                 onPressIn={() => console.log('click in highlight')}
 //                 onPressOut={() => console.log('click out highlight')}
 //                 // activeOpacity={0.1} // xét độ mờ của view; default :0.2
-//                 hitSlop={{ bottom: 50 }}  // mở rộng vùng chạm 
+//                 hitSlop={{ bottom: 50 }}  // mở rộng vùng chạm
 //                 underlayColor={'blue'}
 //                 onShowUnderlay={() => console.log('Show underlay')}
 //                 onHideUnderlay={() => console.log('ngonnnn')}
@@ -357,29 +358,29 @@ import { View, Button, Alert, Text, TouchableOpacity, TouchableHighlight, Pressa
 //     )
 // }
 
-export function Modal01() {
-    const [open, setOpen] = React.useState(false);
-    return (
-        <>
-            <Button title='Sign in' onPress={() => setOpen(true)}></Button>
-            <Modal
-                visible={open}
-                style={{ margin: 100 }}
-                animationType="slide"
-                backdropColor={'pink'}
-                //onDismiss={() => Alert.alert('closed')}
-                transparent={false}
-                onOrientationChange={() => Alert.alert('changeeee')}
-                onRequestClose={() => Alert.alert('closeddddd')}
-                presentationStyle='pageSheet'
-                onShow={() => Alert.alert('openeddd')}
-            >
+// export function Modal01() {
+//     const [open, setOpen] = React.useState(false);
+//     return (
+//         <>
+//             <Button title='Sign in' onPress={() => setOpen(true)}></Button>
+//             <Modal
+//                 visible={open}
+//                 style={{ margin: 100 }}
+//                 animationType="slide"
+//                 backdropColor={'pink'}
+//                 //onDismiss={() => Alert.alert('closed')}
+//                 transparent={false}
+//                 onOrientationChange={() => Alert.alert('changeeee')}
+//                 onRequestClose={() => Alert.alert('closeddddd')}
+//                 presentationStyle='pageSheet'
+//                 onShow={() => Alert.alert('openeddd')}
+//             >
 
-                <View style={{ margin: 50 }}>
-                    <Text>Sign in</Text>
-                    <Button title='return' onPress={() => setOpen(false)}></Button>
-                </View>
-            </Modal>
-        </>
-    )
-}
+//                 <View style={{ margin: 50 }}>
+//                     <Text>Sign in</Text>
+//                     <Button title='return' onPress={() => setOpen(false)}></Button>
+//                 </View>
+//             </Modal>
+//         </>
+//     )
+// }
