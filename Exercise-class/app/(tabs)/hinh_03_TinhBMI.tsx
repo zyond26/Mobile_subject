@@ -11,7 +11,7 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Text, TextInput, TouchableOpacity } from 'react-native';
 
-export function CalculatorBMI() {
+export default function CalculatorBMI() {
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
     const [bmi, setBmi] = useState(0);

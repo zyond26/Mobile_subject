@@ -49,7 +49,7 @@ import React, { useState } from 'react';
 // });
 
 
-export function App1() {
+export default function App1() {
     return (
         <View style={stylesApp.container}>
             <StatusBar barStyle="dark-content" />

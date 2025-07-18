@@ -5,7 +5,7 @@
 
 import { Text, View, Image, StyleSheet, ScrollView } from "react-native";
 
-export function Movie() {
+export default function Movie() {
     return (
         <ScrollView style={styles.container}>
 

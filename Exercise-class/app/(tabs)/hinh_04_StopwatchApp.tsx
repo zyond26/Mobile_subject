@@ -9,7 +9,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-export function StopwatchApp() {
+export default function StopwatchApp() {
     return (
         <View style={styles.container}>
             <Text style={styles.mainTime}>00:00.00</Text>

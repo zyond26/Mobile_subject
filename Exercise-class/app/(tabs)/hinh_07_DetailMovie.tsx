@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-export function DetailMovie() {
+export default function DetailMovie() {
     return (
         <View style={styles.container}>
             <View style={styles.content}>

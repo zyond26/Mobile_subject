@@ -1,0 +1,20 @@
+- Create a project use "tsx"
+
+1. npx create-expo-app <ten_project>
+
++) Create a project use "js"
+
+1. npx create-expo-app --template blank
+
+
+---> ( reset project :
+
+npm run reset-project
+
+====> Khi bắt đầu tạo dự án nào cũng cài những thư viện sau :
+
+npm install @react-navigation/native
+
+npx expo install react-native-screens react-native-safe-area-context
+
+npm install @react-navigation/native-stack
